@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Gamet</title>
+    <link rel="stylesheet" href="Maze.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="middle">
+            <div  class="head">
+                <h3>Maze Game</h3>
+                <p>To Play Click On <em>W</em> to Up
+                <em >A</em> for Left <em >S</em> for Down <em >D</em> for Right
+                <em >B</em> to See Bomb
+                <em >E</em> to See Door </p>
+                <em >N</em> to End the game </p>
+            </div>
+            <h2 id="counter" class="counter"></h2>
+            <canvas class="myCanvas" id="myCanvas" width="1200" height="800"></canvas>
+        </div>
+         <!-- The Modal -->
+        <div id="myModal" class="modal" onclick="closeX3()">
+            <!-- Modal content -->
+            <div class="modal-content" >
+                <div class="modal-header"> 
+                    <span class="close">&times;</span>
+                    <h2 class="gamehead"></h2>
+                </div>
+                <div class="modal-footer">
+                    <h2 id="demo" onmouseover="" style="cursor:pointer;">Click To Play Again?</h2>
+                    <img src="images/congra.jpg" alt="" width="150" height="150">
+                </div>
+            </div>
+        </div>
+        <div id="myModalLost" class="modal" onclick="closeX3()">
+            <div class="modal-content" >
+                <div class="modal-header"> 
+                    <span class="close">&times;</span>
+                    <h2 class="gameheadLost"></h2>
+                </div>
+                <div class="modal-footer">
+                    <h2 id="demo" onmouseover="" style="cursor:pointer;">Click To Play Again?</h2>
+                    <img src="images/lost.png" alt="" width="150" height="150">
+                </div>
+            </div>
+        </div>
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div onclick="closeX()" class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 class="gamehead2"></h2>
+                </div>
+                <div class="modal-footer">
+                    <h2 id="demo" onclick="closeX()" style="cursor:pointer;">Click To Continue</h2>
+                    <img src="images/mistake.jpg" alt="" width="150" height="150">
+                </div>
+            </div>
+        </div>
+            <div id="myModal3" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div onclick="closeX2()" class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2 class="gamehead3"></h2>
+                    </div>
+                    <div class="modal-footer"onclick="closeX2()">
+                        <h2 style="cursor:pointer;">Coward!!</h2>
+                        <img src="images/CO.jpg" alt="" width="150" height="150">
+                    </div>                    
+                </div>
+           </div>
+
+    </div>  
+    <script src="main.js"></script>
+</html>
